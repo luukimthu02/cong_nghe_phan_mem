@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { WrapperButtonMore, WrapperProducts } from './style';
+import SlideComponent from '../../components/SlideComponent/SlideComponent';
 import slider1 from '../../asset/images/slide_2.jpg';
 import slider2 from '../../asset/images/1.jpg';
 import slider3 from '../../asset/images/slide_5.jpg';
@@ -150,7 +151,10 @@ const HomePages = () => {
       <div >
         <div style={{ background: ' #efefef' }}>
           <div id='container' style={{ height: 'auto', padding: '0 300px' }}>
-
+            <div>
+              <SlideComponent arrImages={[slider1, slider2, slider3, slider4]} style={{ width: '100px', outerHeight: '100px' }}>
+              </SlideComponent>
+            </div>
 
             <div className="container delivery-process" style={{ paddingTop: '50px' }}>
               <h4 className='text-center display-6 fw-bold mt-4'><span style={{ background: '#fff' }}>Các loại </span><span style={{ background: '#09a603', color: '#fff' }}>sản phẩm mới</span></h4>
