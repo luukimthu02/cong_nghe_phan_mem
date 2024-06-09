@@ -18,6 +18,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Button } from 'antd';
 import FooterComponent from '../../components/FooterComponent/FooterComponent';
+import CartComponent from '../../components/CartComponent/CartComponent';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
 import './style.scss'
@@ -208,7 +209,9 @@ const HomePages = () => {
             {/*Categories end*/}
 
 
-
+            <WrapperProducts>
+              <CartComponent />
+            </WrapperProducts>
             <div style={{ width: '100%', display: 'flex', marginTop: '10px', justifyContent: 'center', textAlign: 'center' }}>
               <WrapperButtonMore>
                 <Button style={{ border: '1px solid #027353', color: '#000', width: '240px', borderRadius: '5px', height: '38px', fontSize: '15px', fontWeight: '500' }}>
