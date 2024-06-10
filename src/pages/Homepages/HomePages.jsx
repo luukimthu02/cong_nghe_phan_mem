@@ -29,6 +29,9 @@ const HomePages = () => {
   const handelHomePages = () => {
     navigate('./')
   }
+  const handelDrink = () => {
+    navigate('./drink')
+  }
 
   const [isShowcategories, setShowcategories] = useState(true);
   const [menu] = useState([
@@ -117,7 +120,7 @@ const HomePages = () => {
               Danh sách sản phẩm
             </div >
             <ul className={isShowcategories ? "" : "hidden "} >
-              <li>
+              <li onClick={handelDrink}>
                 <Link to={""}>
                   Đồ uống
                 </Link>
