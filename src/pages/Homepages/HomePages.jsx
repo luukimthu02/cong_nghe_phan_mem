@@ -32,6 +32,9 @@ const HomePages = () => {
   const handelDrink = () => {
     navigate('./drink')
   }
+  const handelJruit = () => {
+    navigate('./fruit')
+  }
 
   const [isShowcategories, setShowcategories] = useState(true);
   const [menu] = useState([
@@ -125,7 +128,7 @@ const HomePages = () => {
                   Đồ uống
                 </Link>
               </li>
-              <li>
+              <li onClick={handelJruit}>
                 <Link to={""}>
                   Trái cây
                 </Link>
