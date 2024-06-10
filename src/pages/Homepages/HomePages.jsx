@@ -32,8 +32,13 @@ const HomePages = () => {
   const handelDrink = () => {
     navigate('./drink')
   }
+
+  const handelAbout = () => {
+    navigate('./about')
+
   const handelJruit = () => {
     navigate('./fruit')
+
   }
 
   const [isShowcategories, setShowcategories] = useState(true);
@@ -145,7 +150,7 @@ const HomePages = () => {
             <li>
               SẢN PHẨM
             </li>
-            <li>
+            <li onClick={handelAbout}>
               BÀI VIẾT
             </li>
             <li>

@@ -6,8 +6,8 @@ import { cProductDetailComponent } from "../components/ProductDetailComponent/3P
 import { dProductDetailComponent } from "../components/ProductDetailComponent/4ProductDetailComponent ";
 import { eProductDetailComponent } from "../components/ProductDetailComponent/5ProductDetailComponent ";
 import CartDrinkComponent from "../components/CartDrinkComponent/CartDrinkComponent";
+import { AboutComponent } from "../components/AboutComponent/AboutComponent";
 import CartFruitComponent from "../components/CartFruitComponent/CartFruitComponent";
-
 
 export const routes = [
     {
@@ -75,13 +75,18 @@ export const routes = [
         path: '/:type/product-details6',
         page: eProductDetailComponent,
 
-    }, {
+    },
+    {
         path: '/drink',
         page: CartDrinkComponent,
 
         isShowHeader: true
     },
     {
+        path: '/about',
+        page: AboutComponent,
+        isShowHeader: true
+    },
         path: '/fruit',
         page: CartFruitComponent,
         isShowHeader: true
