@@ -1,5 +1,4 @@
 import HomePages from "../pages/Homepages/HomePages";
-
 import { ProductDetailComponent } from "../components/ProductDetailComponent/ProductDetailComponent";
 import { aProductDetailComponent } from "../components/ProductDetailComponent/1ProductDetailComponent";
 import { bProductDetailComponent } from "../components/ProductDetailComponent/2ProductDetailComponent";
@@ -8,7 +7,7 @@ import { dProductDetailComponent } from "../components/ProductDetailComponent/4P
 import { eProductDetailComponent } from "../components/ProductDetailComponent/5ProductDetailComponent ";
 import CartDrinkComponent from "../components/CartDrinkComponent/CartDrinkComponent";
 import { AboutComponent } from "../components/AboutComponent/AboutComponent";
-
+import CartFruitComponent from "../components/CartFruitComponent/CartFruitComponent";
 
 export const routes = [
     {
@@ -88,4 +87,8 @@ export const routes = [
         page: AboutComponent,
         isShowHeader: true
     },
+        path: '/fruit',
+        page: CartFruitComponent,
+        isShowHeader: true
+    }
 ]
