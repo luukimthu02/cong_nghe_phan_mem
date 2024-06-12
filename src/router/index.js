@@ -6,6 +6,7 @@ import { cProductDetailComponent } from "../components/ProductDetailComponent/3P
 import { dProductDetailComponent } from "../components/ProductDetailComponent/4ProductDetailComponent ";
 import { eProductDetailComponent } from "../components/ProductDetailComponent/5ProductDetailComponent ";
 import CartDrinkComponent from "../components/CartDrinkComponent/CartDrinkComponent";
+import { SigupPage } from "../pages/SigupPage/SigupPage";
 import { AboutComponent } from "../components/AboutComponent/AboutComponent";
 import CartFruitComponent from "../components/CartFruitComponent/CartFruitComponent";
 
@@ -90,5 +91,10 @@ export const routes = [
         path: '/fruit',
         page: CartFruitComponent,
         isShowHeader: true
-    }
+    },
+    {
+        path: '/sign-up',
+        page: SigupPage,
+        isShowHeader: false
+    },
 ]
