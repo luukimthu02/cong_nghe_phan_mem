@@ -14,8 +14,8 @@ import { useNavigate } from 'react-router-dom';
 
 const HeaderComponent = () => {
     const navigate = useNavigate()
-    const handelNevigatelogin = () => {
-        navigate('./sign-in')
+    const handelNevigateSignup = () => {
+        navigate('./sign-up')
     }
     const handelHomePages = () => {
         navigate('./')
@@ -39,8 +39,8 @@ const HeaderComponent = () => {
                 <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                     <WrapperHeaderAcount>
                         <UserAddOutlined style={{ fontSize: '25px', color: '#272727' }} />
-                        <div onClick={handelNevigatelogin} style={{ cursor: 'pointer' }}>
-                            <WrapperTextHeaderSmall >Đăng nhập/ Đăng ký</WrapperTextHeaderSmall>
+                        <div style={{ cursor: 'pointer' }}>
+                            <WrapperTextHeaderSmall > <span>Đăng nhập</span>/ <span onClick={handelNevigateSignup}>Đăng ký</span></WrapperTextHeaderSmall>
                             <div>
                                 <WrapperTextHeaderSmall>Tài khoản</WrapperTextHeaderSmall>
                                 <BellOutlined style={{ marginRight: '5px' }} />
