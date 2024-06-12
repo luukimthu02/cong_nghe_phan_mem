@@ -9,6 +9,7 @@ import CartDrinkComponent from "../components/CartDrinkComponent/CartDrinkCompon
 import { SigupPage } from "../pages/SigupPage/SigupPage";
 import { AboutComponent } from "../components/AboutComponent/AboutComponent";
 import CartFruitComponent from "../components/CartFruitComponent/CartFruitComponent";
+import { SiginPage } from "../pages/SiginPage/SiginPage";
 
 export const routes = [
     {
@@ -88,6 +89,7 @@ export const routes = [
         page: AboutComponent,
         isShowHeader: true
     },
+    {
         path: '/fruit',
         page: CartFruitComponent,
         isShowHeader: true
@@ -95,6 +97,11 @@ export const routes = [
     {
         path: '/sign-up',
         page: SigupPage,
+        isShowHeader: false
+    },
+    {
+        path: '/sign-in',
+        page: SiginPage,
         isShowHeader: false
     },
 ]

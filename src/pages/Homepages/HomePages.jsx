@@ -32,10 +32,9 @@ const HomePages = () => {
   const handelDrink = () => {
     navigate('./drink')
   }
-
   const handelAbout = () => {
     navigate('./about')
-
+  }
   const handelJruit = () => {
     navigate('./fruit')
 
@@ -43,7 +42,6 @@ const HomePages = () => {
 
   const [isShowcategories, setShowcategories] = useState(true);
   const [menu] = useState([
-
     {
 
       isShowsubmenu: false,
@@ -61,9 +59,7 @@ const HomePages = () => {
           path: "",
         }
       ]
-
     },
-
   ])
 
   const responsive = {
