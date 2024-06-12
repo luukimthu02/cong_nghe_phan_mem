@@ -20,6 +20,9 @@ const HeaderComponent = () => {
     const handelHomePages = () => {
         navigate('./')
     }
+    const handelNevigateSignin = () =>{
+        navigate('./sign-in')
+    }
     return (
         <div>
             <WrapperHeader>
@@ -40,7 +43,7 @@ const HeaderComponent = () => {
                     <WrapperHeaderAcount>
                         <UserAddOutlined style={{ fontSize: '25px', color: '#272727' }} />
                         <div style={{ cursor: 'pointer' }}>
-                            <WrapperTextHeaderSmall > <span>Đăng nhập</span>/ <span onClick={handelNevigateSignup}>Đăng ký</span></WrapperTextHeaderSmall>
+                            <WrapperTextHeaderSmall > <span onClick={handelNevigateSignin}>Đăng nhập</span>/ <span onClick={handelNevigateSignup}>Đăng ký</span></WrapperTextHeaderSmall>
                             <div>
                                 <WrapperTextHeaderSmall>Tài khoản</WrapperTextHeaderSmall>
                                 <BellOutlined style={{ marginRight: '5px' }} />
