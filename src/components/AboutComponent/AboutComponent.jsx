@@ -24,6 +24,12 @@ export const AboutComponent = () => {
     const handelAbout = () => {
         navigate('/about')
     }
+    const handelContact = () => {
+        navigate('/contact')
+    }
+    const handelProduct = () => {
+        navigate('/:type')
+    }
     return (
         <>
             <div className='list_menu' style={{ padding: '0 300px', display: 'flex', paddingTop: '10px' }}>
@@ -31,13 +37,13 @@ export const AboutComponent = () => {
                     <li onClick={handelHomePages}>
                         TRANG CHỦ
                     </li>
-                    <li>
+                    <li onClick={handelProduct}>
                         SẢN PHẨM
                     </li >
                     <li onClick={handelAbout}>
                         BÀI VIẾT
                     </li>
-                    <li>
+                    <li onClick={handelContact}>
                         LIÊN HỆ
                     </li>
                 </ul>

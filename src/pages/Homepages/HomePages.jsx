@@ -27,17 +27,22 @@ import './style.scss'
 const HomePages = () => {
   const navigate = useNavigate()
   const handelHomePages = () => {
-    navigate('./')
+    navigate('/')
   }
   const handelDrink = () => {
-    navigate('./drink')
+    navigate('/drink')
   }
   const handelAbout = () => {
-    navigate('./about')
+    navigate('/about')
   }
   const handelJruit = () => {
-    navigate('./fruit')
-
+    navigate('/fruit')
+  }
+  const handelContact = () => {
+    navigate('/contact')
+  }
+  const handelProduct = () => {
+    navigate('./:type')
   }
 
   const [isShowcategories, setShowcategories] = useState(true);
@@ -143,13 +148,13 @@ const HomePages = () => {
             <li onClick={handelHomePages}>
               TRANG CHỦ
             </li>
-            <li>
+            <li onClick={handelProduct}>
               SẢN PHẨM
             </li>
             <li onClick={handelAbout}>
               BÀI VIẾT
             </li>
-            <li>
+            <li onClick={handelContact}>
               LIÊN HỆ
             </li>
           </ul>

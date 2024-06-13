@@ -20,10 +20,10 @@ const CartDrinkComponent = () => {
     navigate('/')
   }
   const handelContact = () => {
-    navigate('./contact')
+    navigate('/contact')
   }
   const handelProduct = () => {
-    navigate('./:type')
+    navigate('/:type')
   }
   const handelAbout = () => {
     navigate('/about')

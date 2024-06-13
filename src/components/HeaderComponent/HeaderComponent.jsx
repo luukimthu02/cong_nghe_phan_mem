@@ -15,13 +15,13 @@ import { useNavigate } from 'react-router-dom';
 const HeaderComponent = () => {
     const navigate = useNavigate()
     const handelNevigateSignup = () => {
-        navigate('./sign-up')
+        navigate('/sign-up')
     }
     const handelHomePages = () => {
-        navigate('./')
+        navigate('/')
     }
-    const handelNevigateSignin = () =>{
-        navigate('./sign-in')
+    const handelNevigateSignin = () => {
+        navigate('/sign-in')
     }
     return (
         <div>

@@ -10,6 +10,9 @@ import { SigupPage } from "../pages/SigupPage/SigupPage";
 import { AboutComponent } from "../components/AboutComponent/AboutComponent";
 import CartFruitComponent from "../components/CartFruitComponent/CartFruitComponent";
 import { SiginPage } from "../pages/SiginPage/SiginPage";
+import { ContactPages } from "../pages/ContactPages/ContactPages";
+import { TypeProductPage } from "../pages/TypeProductPage/TypeProductPage";
+
 
 export const routes = [
     {
@@ -103,5 +106,15 @@ export const routes = [
         path: '/sign-in',
         page: SiginPage,
         isShowHeader: false
+    },
+    {
+        path: '/contact',
+        page: ContactPages,
+        isShowHeader: true
+    },
+    {
+        path: '/:type',
+        page: TypeProductPage,
+        isShowHeader: true
     },
 ]
